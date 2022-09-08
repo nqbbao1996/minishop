@@ -1,0 +1,131 @@
+.backgroundForm{
+  background-color: rgb(62, 134, 228);
+  width: 100%;
+  display: block;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+}
+.formContent {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .form {
+    position: relative;
+    width: 360px;
+    min-height: 100px;
+
+    padding: 24px 24px;
+    text-align: center;
+    border-radius: 2px;
+    margin: 24px;
+
+  }
+  .form .heading {
+    font-size: 2rem;
+  }
+  .form .desc {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 300;
+    margin-top: 16px;
+  }
+
+  .spacer {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+    .form-message {
+      text-align: left;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      padding: 4px 0 0;
+      color: #f33a58;
+    }
+    
+  }
+  
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+    :hover {
+        border-color: #1dbfaf;
+    }
+  }
+
+  .form-submit {
+    outline: none;
+    background-color: #1dbfaf;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background-color: #1ac7b6;
+  }
+  
+  .close-icon{
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 6px 12px;
+  font-size: 2rem;
+  color: #1dbfaf;
+  opacity: 1;
+  cursor: pointer;
+    :hover{
+      color: #1ac7b6;
+    }
+  }
+
+
+  .Sign-btn {
+    outline: none;
+    margin-top: 12px;
+    padding: 4px 12px;
+    font-weight: 500;
+    border: none;
+    width: 30%;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+    filter: brightness(0.9);
+    transition: all 0.3 linear;
+
+        &:hover{
+            filter: brightness(1);
+            font-weight: bold;
+            user-select: none;
+        }
+    }

@@ -1,0 +1,14 @@
+.SearchAndFilterPane{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+padding: 0 8px;
+justify-content: end;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;   
+        
+    }
+}

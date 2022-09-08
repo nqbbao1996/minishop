@@ -1,0 +1,24 @@
+.footerContainer {
+    width: 100%;
+    height: 8vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+    img{
+        height: 2rem;
+        width: 2rem;
+        margin-right: 4px
+    }
+    h4{
+        margin-bottom: 0px;
+        text-align: center;
+    }
+}

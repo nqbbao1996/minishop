@@ -1,0 +1,26 @@
+.OptionsPane {
+    transform-origin: top;
+    width: 100%;
+    margin-top: 2px;
+    border-radius: 4px;
+    position: absolute;  
+    overflow: hidden;  
+    z-index: 10; 
+    padding-left: 0px;
+
+}
+
+.OptionItem{
+    display: flex;
+    align-items: center;  
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;  
+    padding: 4px 8px;  
+
+    &:hover {
+        background: var(--SelectOptionBackground);
+        font-weight: bold;
+    }
+    
+}
