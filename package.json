@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@redux-devtools/extension": "^3.2.3",
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
@@ -16,6 +17,7 @@
     "firebase": "^9.9.4",
     "formik": "^2.2.9",
     "html-webpack-plugin": "^5.5.0",
+    "node-modules": "^1.0.1",
     "react": "^18.2.0",
     "react-devtools": "^4.25.0",
     "react-dom": "^18.2.0",
@@ -26,6 +28,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "react-use-cart": "^1.13.0",
+    "react-webpack": "^0.4.1",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
