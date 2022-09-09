@@ -21,7 +21,7 @@ function ProductDetail() {
 
   useEffect(() => {
     dispatch(getProductByName(params.id));
-  }, [params.id]);
+  }, [params.id, dispatch]);
   return (
     <div className={cx("Wrapper")}>
       <button className={cx(themeContext.theme)} onClick={() => navigate(-1)}>

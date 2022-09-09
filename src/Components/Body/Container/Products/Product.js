@@ -3,7 +3,7 @@ import classNames from "classnames/bind";
 import { ThemeContext } from "../../../../ThemeContex/ThemeContex";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { CartProvider, useCart } from "react-use-cart";
+import { useCart } from "react-use-cart";
 
 const cx = classNames.bind(styles);
 

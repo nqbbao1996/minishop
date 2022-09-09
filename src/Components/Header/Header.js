@@ -19,10 +19,10 @@ function Header() {
       </Link>
       <div className={cx("nav-btn")}>
         <Link to={"/signup"}>
-          <button className={cx("Sign-btn", themeContext.theme)}>SignUp</button>
+          <button className={cx("Sign-btn", themeContext.theme)}>Sign Up</button>
         </Link>
         <Link to={"/signin"}>
-          <button className={cx("Sign-btn", themeContext.theme)}>SignIn</button>
+          <button className={cx("Sign-btn", themeContext.theme)}>Sign In</button>
         </Link>
         <Link to={"/carts"}>
           <button className={cx("Sign-btn", themeContext.theme)}>

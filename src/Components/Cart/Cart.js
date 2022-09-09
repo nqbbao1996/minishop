@@ -29,7 +29,11 @@ function Cart() {
                 return (
                   <tr key={index}>
                     <td>
-                      <img src={item.image} style={{ height: "6rem" }} />
+                      <img
+                        src={item.image}
+                        style={{ height: "6rem" }}
+                        alt={item.name}
+                      />
                     </td>
 
                     <td>{item.name}</td>

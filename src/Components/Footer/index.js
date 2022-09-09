@@ -12,7 +12,7 @@ function Footer() {
     <div className={cx("footerContainer", themeContext.theme)}>
       <a href="https://zalo.me/0968871596">
         <h4>
-          <img src={require("../../IconZalo/zalo.jpg")} atl="zalo" />
+          <img src={require("../../IconZalo/zalo.jpg")} alt="" />
           Quốc Bảo
         </h4>
       </a>

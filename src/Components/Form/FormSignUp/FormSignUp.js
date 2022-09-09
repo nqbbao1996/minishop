@@ -27,7 +27,7 @@ function FormSignUp() {
       email: Yup.string()
         .required("is required")
         .matches(
-          /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+          /^[\w-]+@([\w-]+)+[\w-]{2,4}$/,
           "địa chỉ mail không chính xác"
         ),
       password: Yup.string()

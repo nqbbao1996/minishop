@@ -1,7 +1,5 @@
 import styles from "./Detail.module.scss";
 import classNames from "classnames/bind";
-import { useSelector } from "react-redux";
-import { Fragment } from "react";
 
 const cx = classNames.bind(styles);
 

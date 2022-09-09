@@ -1,7 +1,6 @@
 import styles from "./Detail.module.scss";
 import classNames from "classnames/bind";
-import { useSelector } from "react-redux";
-import { CartProvider, useCart } from "react-use-cart";
+import { useCart } from "react-use-cart";
 
 const cx = classNames.bind(styles);
 

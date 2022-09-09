@@ -27,7 +27,7 @@ function FormSignIn({ setShow }) {
       email: Yup.string()
         .required("is required")
         .matches(
-          /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+          /^[\w-]+@([\w-]+)+[\w-]{2,4}$/,
           "địa chỉ mail không chính xác"
         ),
       password: Yup.string()
@@ -57,7 +57,7 @@ function FormSignIn({ setShow }) {
           className={cx("form", themeContext.theme)}
           onSubmit={formik.handleSubmit}
         >
-          <p className={cx("heading")}>Đăng Ký</p>
+          <p className={cx("heading")}>Đăng Nhập</p>
           <p className={cx("desc")}>Welcome to Shop ❤️❤️</p>
           <div className={cx("spacer")}></div>
           <div className={cx("form-group")}>
