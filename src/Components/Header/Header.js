@@ -15,14 +15,18 @@ function Header() {
     <header className={cx(themeContext.theme)}>
       <SwitchMode />
       <Link to={"/"}>
-        <span className={cx("brand")}>SHOP</span>
+        <span className={cx("brand")}>MINI SHOP</span>
       </Link>
       <div className={cx("nav-btn")}>
         <Link to={"/signup"}>
-          <button className={cx("Sign-btn", themeContext.theme)}>Sign Up</button>
+          <button className={cx("Sign-btn", themeContext.theme)}>
+            Sign Up
+          </button>
         </Link>
         <Link to={"/signin"}>
-          <button className={cx("Sign-btn", themeContext.theme)}>Sign In</button>
+          <button className={cx("Sign-btn", themeContext.theme)}>
+            Sign In
+          </button>
         </Link>
         <Link to={"/carts"}>
           <button className={cx("Sign-btn", themeContext.theme)}>

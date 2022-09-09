@@ -32,7 +32,7 @@
     margin-top: 30px;  
     min-height: 500px;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
         }
@@ -79,7 +79,7 @@
         max-height: 220px;
         overflow: hidden;
         text-align: justify;
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 768px) {
             max-height: unset;
         }
     }
@@ -97,7 +97,7 @@
         bottom: 2.4rem;
         transform: translateX(35%);
         
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 768px) {
             width: 98%;
             position: relative;
             transform: translateX(0%);

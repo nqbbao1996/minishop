@@ -12,7 +12,7 @@ header {
   padding: 0 40px;
   z-index: 10;
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     padding: 0 20px;
   }
   span {
@@ -21,7 +21,7 @@ header {
     text-shadow: var(--TextShadow);
     cursor: pointer;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 560px) {
       display: none;
     }
   }
