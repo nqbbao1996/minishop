@@ -15,21 +15,30 @@ header {
   @media only screen and (max-width: 768px) {
     padding: 0 20px;
   }
-  span {
+}
+.brand{
     font-weight: bold;
     font-size: 2.4rem;
     text-shadow: var(--TextShadow);
     cursor: pointer;
 
+    animation-name: changecolor;
+    animation-duration: 6s;
+    animation-iteration-count:infinite;
+
     @media only screen and (max-width: 560px) {
       display: none;
-    }
   }
 }
-.brand{
+.homeIcon{
+  font-size: 3rem;
   animation-name: changecolor;
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-iteration-count:infinite;
+  @media only screen and (max-width: 560px) {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
 }
 @keyframes changecolor{
   0%   {color: rgb(4, 0, 255);}

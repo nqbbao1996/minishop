@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
 import { BsFillCartCheckFill } from "react-icons/bs";
+import { BiHomeHeart } from "react-icons/bi";
 const cx = classNames.bind(styles);
 
 function Header() {
@@ -15,6 +16,9 @@ function Header() {
     <header className={cx(themeContext.theme)}>
       <SwitchMode />
       <Link to={"/"}>
+        <i className={cx("homeIcon")}>
+          <BiHomeHeart />
+        </i>
         <span className={cx("brand")}>MINI SHOP</span>
       </Link>
       <div className={cx("nav-btn")}>
