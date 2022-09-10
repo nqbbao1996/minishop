@@ -1,18 +1,12 @@
 import styles from "../Form.module.scss";
 import classNames from "classnames/bind";
-import { TbArrowBack } from "react-icons/tb";
-import { ThemeContext } from "../../../ThemeContex/ThemeContex";
-import { useContext } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { Link, useNavigate } from "react-router-dom";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const cx = classNames.bind(styles);
 
-function FormSignIn({ setShow }) {
-  const themeContext = useContext(ThemeContext);
-  const navigate = useNavigate();
-
+function FormSignIn({ setShowIn }) {
   const formik = useFormik({
     initialValues: {
       fullname: "",
@@ -52,31 +46,16 @@ function FormSignIn({ setShow }) {
 
   return (
     <>
+      <div
+        className={cx("background-form")}
+        onClick={() => setShowIn(false)}
+      ></div>
       <section className={cx("formContent")}>
-        <form
-          className={cx("form", themeContext.theme)}
-          onSubmit={formik.handleSubmit}
-        >
+        <form className={cx("form")} onSubmit={formik.handleSubmit}>
           <p className={cx("heading")}>Đăng Nhập</p>
           <p className={cx("desc")}>Welcome to Shop ❤️❤️</p>
           <div className={cx("spacer")}></div>
-          <div className={cx("form-group")}>
-            <label className={cx("form-label")}>Tên đầy đủ</label>
-            <input
-              onChange={formik.handleChange}
-              value={formik.values.fullname}
-              id="fullname"
-              name="fullname"
-              type="text"
-              placeholder="VD: Nguyễn Văn A"
-              className={cx("form-control")}
-            />
-            {formik.errors.fullname && (
-              <span className={cx("form-message")}>
-                {formik.errors.fullname}
-              </span>
-            )}
-          </div>
+
           <div className={cx("form-group")}>
             <label className={cx("form-label")}>Email</label>
             <input
@@ -113,17 +92,9 @@ function FormSignIn({ setShow }) {
           <button className={cx("form-submit")} type="submit">
             Đăng ký
           </button>
-          <Link to={"/signup"}>
-            <button
-              navigate="/signup"
-              className={cx("Sign-btn", themeContext.theme)}
-            >
-              SignUp
-            </button>
-          </Link>
 
-          <div className={cx("close-icon")} onClick={() => navigate(-1)}>
-            <TbArrowBack />
+          <div className={cx("close-icon")} onClick={() => setShowIn(false)}>
+            <AiOutlineCloseCircle />
           </div>
         </form>
       </section>

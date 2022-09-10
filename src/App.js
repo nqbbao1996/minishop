@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "./ThemeContex/ThemeContex";
 import "./App.css";
 import MainContent from "./Components/Body/MainContent";
@@ -14,12 +14,22 @@ import { CartProvider } from "react-use-cart";
 
 function App() {
   const themeContext = useContext(ThemeContext);
+  const [showUp, setShowUp] = useState(false);
+  const [showIn, setShowIn] = useState(false);
+  const [showCart, setShowCart] = useState(false);
 
   return (
     <CartProvider>
       <div className={`App ${themeContext.theme}`}>
         <Router>
-          <Header />
+          <Header
+            setShowUp={setShowUp}
+            setShowIn={setShowIn}
+            setShowCart={setShowCart}
+          />
+          {showCart ? <Cart setShowCart={setShowCart} /> : ""}
+          {showUp ? <FormSignUp setShowUp={setShowUp} /> : ""}
+          {showIn ? <FormSignIn setShowIn={setShowIn} /> : ""}
           <div className="Body">
             <Routes>
               <Route path="/" element={<MainContentWithTopView />} />
@@ -28,9 +38,6 @@ function App() {
                 element={<MainContent />}
               />
               <Route path="/products/:id" element={<ProductDetail />} />
-              <Route path="/signup" element={<FormSignUp />} />
-              <Route path="/signin" element={<FormSignIn />} />
-              <Route path="/carts" element={<Cart />} />
             </Routes>
           </div>
           <Footer />

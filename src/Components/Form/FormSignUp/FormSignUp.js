@@ -1,18 +1,12 @@
 import styles from "../Form.module.scss";
 import classNames from "classnames/bind";
-import { TbArrowBack } from "react-icons/tb";
-import { ThemeContext } from "../../../ThemeContex/ThemeContex";
-import { useContext } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { Link, useNavigate } from "react-router-dom";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const cx = classNames.bind(styles);
 
-function FormSignUp() {
-  const themeContext = useContext(ThemeContext);
-  const navigate = useNavigate();
-
+function FormSignUp({ setShowUp }) {
   const formik = useFormik({
     initialValues: {
       fullname: "",
@@ -52,12 +46,12 @@ function FormSignUp() {
 
   return (
     <>
-      <div className={cx("background-form")}></div>
+      <div
+        className={cx("background-form")}
+        onClick={() => setShowUp(false)}
+      ></div>
       <section className={cx("formContent")}>
-        <form
-          className={cx("form", themeContext.theme)}
-          onSubmit={formik.handleSubmit}
-        >
+        <form className={cx("form")} onSubmit={formik.handleSubmit}>
           <p className={cx("heading")}>Đăng Ký</p>
           <p className={cx("desc")}>Welcome to Shop ❤️❤️</p>
           <div className={cx("spacer")}></div>
@@ -131,14 +125,8 @@ function FormSignUp() {
           <button className={cx("form-submit")} type="submit">
             Đăng ký
           </button>
-          <Link to={"/signin"}>
-            <button className={cx("Sign-btn", themeContext.theme)}>
-              SignIn
-            </button>
-          </Link>
-
-          <div className={cx("close-icon")} onClick={() => navigate(-1)}>
-            <TbArrowBack />
+          <div className={cx("close-icon")} onClick={() => setShowUp(false)}>
+            <AiOutlineCloseCircle />
           </div>
         </form>
       </section>

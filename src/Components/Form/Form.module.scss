@@ -1,12 +1,12 @@
-.backgroundForm{
-  background-color: rgb(62, 134, 228);
+.background-form{
+  background: rgb(62, 134, 228);
   width: 100%;
-  display: block;
+  height: 100%;
 
   position: fixed;
   top: 0;
-  bottom: 0;
   right: 0;
+  z-index: 100;
   opacity: 0.2;
 }
 .formContent {
@@ -16,9 +16,13 @@
   }
 
   .form {
-    position: relative;
+    position: fixed;
+    top: 9vh;
+    z-index: 1000;
     width: 360px;
     min-height: 100px;
+    background: #fff;
+    color: #333;
 
     padding: 24px 24px;
     text-align: center;
@@ -109,23 +113,3 @@
   }
 
 
-  .Sign-btn {
-    outline: none;
-    margin-top: 12px;
-    padding: 4px 12px;
-    font-weight: 500;
-    border: none;
-    width: 30%;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    float: right;
-    filter: brightness(0.9);
-    transition: all 0.3 linear;
-
-        &:hover{
-            filter: brightness(1);
-            font-weight: bold;
-            user-select: none;
-        }
-    }
