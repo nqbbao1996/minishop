@@ -4,6 +4,7 @@ import InfoProduct from "./Info";
 import ImageInfo from "./Picture";
 import { ThemeContext } from "../../../../ThemeContex/ThemeContex";
 import { getProductByName } from "../../../../Redux/Actions/Action";
+
 import { useContext, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";

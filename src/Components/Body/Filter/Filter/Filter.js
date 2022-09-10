@@ -1,10 +1,10 @@
 import styles from "./Filter.module.scss";
 import classNames from "classnames/bind";
+import { ThemeContext } from "../../../../ThemeContex/ThemeContex";
+import Options from "../Option/Options";
 
 import { AiFillCaretDown } from "react-icons/ai";
-import { ThemeContext } from "../../../../ThemeContex/ThemeContex";
 import { useContext, useEffect, useRef, useState } from "react";
-import Options from "../Option/Options";
 import { useParams } from "react-router-dom";
 
 const cx = classNames.bind(styles);

@@ -2,6 +2,7 @@ import styles from "./Header.module.scss";
 import classNames from "classnames/bind";
 import SwitchMode from "./SwitchMode/SwitchMode";
 import { ThemeContext } from "../../ThemeContex/ThemeContex";
+
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";

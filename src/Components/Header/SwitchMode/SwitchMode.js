@@ -1,8 +1,9 @@
 import styles from "./SwitchMode.module.scss";
 import classNames from "classnames/bind";
+import { ThemeContext } from "../../../ThemeContex/ThemeContex";
+
 import { RiMoonFill, RiSunFill } from "react-icons/ri";
 import { useRef, useState, useEffect, useContext } from "react";
-import { ThemeContext } from "../../../ThemeContex/ThemeContex";
 
 const cx = classNames.bind(styles);
 

@@ -1,15 +1,15 @@
 import styles from "./Container.module.scss";
 import classNames from "classnames/bind";
 import Product from "./Product";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import { ThemeContext } from "../../../../ThemeContex/ThemeContex";
 import {
   getProducts,
   getProductsByCategory,
 } from "../../../../Redux/Actions/Action";
 
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
-import { ThemeContext } from "../../../../ThemeContex/ThemeContex";
 import { useContext } from "react";
 
 const cx = classNames.bind(styles);

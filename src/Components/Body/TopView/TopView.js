@@ -1,8 +1,9 @@
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import styles from "./TopView.module.scss";
 import classNames from "classnames/bind";
-import { useEffect, useRef, useState } from "react";
 import { SmoothHorizontalScrolling } from "../../../SmoothScroll";
+
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 

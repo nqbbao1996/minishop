@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../../ThemeContex/ThemeContex";
 import styles from "./Footer.module.scss";
 import classNames from "classnames/bind";
+import { ThemeContext } from "../../ThemeContex/ThemeContex";
 import "../../IconZalo/zalo.jpg";
 
 const cx = classNames.bind(styles);
