@@ -46,7 +46,7 @@ function Cart({ setShowCart }) {
                       <td>
                         <img
                           src={item.image}
-                          style={{ height: "6rem" }}
+                          style={{ height: "6rem", maxWidth: "4rem" }}
                           alt={item.name}
                         />
                       </td>
@@ -55,7 +55,7 @@ function Cart({ setShowCart }) {
 
                       <td>{item.price}$</td>
 
-                      <td>Quantity({item.quantity})</td>
+                      <td>Qty({item.quantity})</td>
 
                       <td>
                         <button
